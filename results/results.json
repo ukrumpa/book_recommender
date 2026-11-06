@@ -1,0 +1,71 @@
+{
+  "source_notebook": "notebooks/book-recommender-system.ipynb",
+  "extraction_note": "Values copied from the saved notebook outputs; no experiment was rerun.",
+  "split_summary": {
+    "total_rows": 62191,
+    "sampled_rows": 25075,
+    "sample_fraction": 0.402,
+    "ranking_top_k": 10,
+    "relevant_rating_threshold": 8,
+    "tune_train_rows": 17605,
+    "validation_rows": 3725,
+    "test_rows": 3745
+  },
+  "best_validation_configs": {
+    "ALS": {
+      "rank": 12,
+      "max_iter": 15,
+      "reg_param": 0.05
+    },
+    "FMRegressor": {
+      "factor_size": 8,
+      "reg_param": 0,
+      "step_size": 0.05
+    },
+    "XGBRanker": {
+      "n_estimators": 30,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "min_child_weight": 1
+    }
+  },
+  "final_test_results": [
+    {
+      "model_name": "ALS",
+      "best_params_json": "{\"max_iter\": 15, \"rank\": 12, \"reg_param\": 0.05}",
+      "ndcg_at_k": 0.8416,
+      "map_at_k": 0.8152,
+      "precision_at_k": 0.7194,
+      "recall_at_k": 0.9598,
+      "coverage": 0.2096,
+      "eligible_users": 120,
+      "users_scored": 130,
+      "scored_rows": 785
+    },
+    {
+      "model_name": "XGBRanker",
+      "best_params_json": "{\"learning_rate\": 0.05, \"max_depth\": 4, \"min_child_weight\": 1, \"n_estimators\": 30}",
+      "ndcg_at_k": 0.7007,
+      "map_at_k": 0.6798,
+      "precision_at_k": 0.673,
+      "recall_at_k": 0.6752,
+      "coverage": 1,
+      "eligible_users": 139,
+      "users_scored": 144,
+      "scored_rows": 3745
+    },
+    {
+      "model_name": "FMRegressor",
+      "best_params_json": "{\"factor_size\": 8, \"reg_param\": 0.0, \"step_size\": 0.05}",
+      "ndcg_at_k": 0.5927,
+      "map_at_k": 0.5582,
+      "precision_at_k": 0.6097,
+      "recall_at_k": 0.6165,
+      "coverage": 1,
+      "eligible_users": 139,
+      "users_scored": 144,
+      "scored_rows": 3745
+    }
+  ],
+  "validation_output": "\nVALIDATION TUNING RESULTS\n1. ALS | params={\"max_iter\": 15, \"rank\": 12, \"reg_param\": 0.05} | NDCG@10=0.8472 | MAP@10=0.8356 | Precision@10=0.734 | Recall@10=0.9693 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n2. ALS | params={\"max_iter\": 10, \"rank\": 24, \"reg_param\": 0.05} | NDCG@10=0.8458 | MAP@10=0.8323 | Precision@10=0.7321 | Recall@10=0.9666 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n3. ALS | params={\"max_iter\": 15, \"rank\": 24, \"reg_param\": 0.05} | NDCG@10=0.8439 | MAP@10=0.8307 | Precision@10=0.733 | Recall@10=0.967 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n4. ALS | params={\"max_iter\": 10, \"rank\": 12, \"reg_param\": 0.05} | NDCG@10=0.8428 | MAP@10=0.832 | Precision@10=0.733 | Recall@10=0.9689 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n5. ALS | params={\"max_iter\": 15, \"rank\": 12, \"reg_param\": 0.1} | NDCG@10=0.8424 | MAP@10=0.8352 | Precision@10=0.7321 | Recall@10=0.9677 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n6. ALS | params={\"max_iter\": 15, \"rank\": 24, \"reg_param\": 0.1} | NDCG@10=0.8419 | MAP@10=0.8251 | Precision@10=0.733 | Recall@10=0.9684 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n7. ALS | params={\"max_iter\": 10, \"rank\": 24, \"reg_param\": 0.1} | NDCG@10=0.838 | MAP@10=0.8211 | Precision@10=0.7321 | Recall@10=0.9668 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n8. ALS | params={\"max_iter\": 10, \"rank\": 12, \"reg_param\": 0.1} | NDCG@10=0.8325 | MAP@10=0.8263 | Precision@10=0.7321 | Recall@10=0.9677 | coverage=0.1844 | eligible_users=106 | scored_rows=687\n9. XGBRanker | params={\"learning_rate\": 0.05, \"max_depth\": 4, \"min_child_weight\": 1, \"n_estimators\": 30} | NDCG@10=0.6801 | MAP@10=0.6572 | Precision@10=0.6674 | Recall@10=0.6687 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n10. XGBRanker | params={\"learning_rate\": 0.05, \"max_depth\": 4, \"min_child_weight\": 1, \"n_estimators\": 60} | NDCG@10=0.6716 | MAP@10=0.6487 | Precision@10=0.6674 | Recall@10=0.6686 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n11. XGBRanker | params={\"learning_rate\": 0.05, \"max_depth\": 6, \"min_child_weight\": 1, \"n_estimators\": 30} | NDCG@10=0.6681 | MAP@10=0.6421 | Precision@10=0.6623 | Recall@10=0.6698 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n12. XGBRanker | params={\"learning_rate\": 0.05, \"max_depth\": 6, \"min_child_weight\": 1, \"n_estimators\": 60} | NDCG@10=0.6661 | MAP@10=0.639 | Precision@10=0.6609 | Recall@10=0.665 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n13. FMRegressor | params={\"factor_size\": 8, \"reg_param\": 0.0, \"step_size\": 0.05} | NDCG@10=0.5878 | MAP@10=0.5504 | Precision@10=0.5906 | Recall@10=0.5934 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n14. FMRegressor | params={\"factor_size\": 8, \"reg_param\": 0.05, \"step_size\": 0.05} | NDCG@10=0.586 | MAP@10=0.5455 | Precision@10=0.5927 | Recall@10=0.5982 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n15. FMRegressor | params={\"factor_size\": 16, \"reg_param\": 0.0, \"step_size\": 0.05} | NDCG@10=0.5833 | MAP@10=0.5453 | Precision@10=0.5898 | Recall@10=0.5953 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n16. FMRegressor | params={\"factor_size\": 16, \"reg_param\": 0.05, \"step_size\": 0.05} | NDCG@10=0.5822 | MAP@10=0.543 | Precision@10=0.5906 | Recall@10=0.5903 | coverage=1.0 | eligible_users=138 | scored_rows=3725\n\nFINAL TEST RESULTS\n1. ALS | params={\"max_iter\": 15, \"rank\": 12, \"reg_param\": 0.05} | NDCG@10=0.8416 | MAP@10=0.8152 | Precision@10=0.7194 | Recall@10=0.9598 | coverage=0.2096 | eligible_users=120 | scored_rows=785\n2. XGBRanker | params={\"learning_rate\": 0.05, \"max_depth\": 4, \"min_child_weight\": 1, \"n_estimators\": 30} | NDCG@10=0.7007 | MAP@10=0.6798 | Precision@10=0.673 | Recall@10=0.6752 | coverage=1.0 | eligible_users=139 | scored_rows=3745\n3. FMRegressor | params={\"factor_size\": 8, \"reg_param\": 0.0, \"step_size\": 0.05} | NDCG@10=0.5927 | MAP@10=0.5582 | Precision@10=0.6097 | Recall@10=0.6165 | coverage=1.0 | eligible_users=139 | scored_rows=3745\n"
+}

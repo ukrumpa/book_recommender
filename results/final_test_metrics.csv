@@ -1,0 +1,4 @@
+model_name,best_params,ndcg_at_10,map_at_10,precision_at_10,recall_at_10,coverage,eligible_users,users_scored,scored_rows
+"ALS","{""max_iter"": 15, ""rank"": 12, ""reg_param"": 0.05}","0.8416","0.8152","0.7194","0.9598","0.2096","120","130","785"
+"XGBRanker","{""learning_rate"": 0.05, ""max_depth"": 4, ""min_child_weight"": 1, ""n_estimators"": 30}","0.7007","0.6798","0.673","0.6752","1","139","144","3745"
+"FMRegressor","{""factor_size"": 8, ""reg_param"": 0.0, ""step_size"": 0.05}","0.5927","0.5582","0.6097","0.6165","1","139","144","3745"
