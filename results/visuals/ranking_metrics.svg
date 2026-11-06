@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+<title id="title">Top-10 ranking metrics by recommender model</title>
+<desc id="desc">Grouped horizontal bars compare NDCG at 10, MAP at 10, precision at 10, and recall at 10 for ALS, XGBRanker, and FMRegressor on the saved test results.</desc>
+<rect width="1100" height="620" fill="#ffffff"/>
+<text x="56" y="52" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#172033">Top-10 ranking performance</text>
+<text x="56" y="82" font-family="Arial,sans-serif" font-size="15" fill="#64748b">Saved final test results · higher is better · metric scale 0–1</text>
+<g font-family="Arial,sans-serif" font-size="13" fill="#64748b">
+<text x="290" y="128">0.0</text><text x="475" y="128">0.25</text><text x="660" y="128">0.50</text><text x="845" y="128">0.75</text><text x="1015" y="128">1.0</text>
+</g>
+<g stroke="#e2e8f0" stroke-width="1"><path d="M290 140V540 M475 140V540 M660 140V540 M845 140V540 M1030 140V540"/></g>
+<g font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#172033">
+<text x="56" y="183">ALS</text><text x="56" y="323">XGBRanker</text><text x="56" y="463">FMRegressor</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="12" fill="#475569">
+<text x="56" y="204">NDCG .8416 · MAP .8152</text><text x="56" y="344">NDCG .7007 · MAP .6798</text><text x="56" y="484">NDCG .5927 · MAP .5582</text>
+</g>
+<g>
+<rect x="290" y="158" width="623.6" height="17" rx="4" fill="#2563eb"/><rect x="290" y="181" width="603.2" height="17" rx="4" fill="#60a5fa"/><rect x="290" y="204" width="532.4" height="17" rx="4" fill="#0f766e"/><rect x="290" y="227" width="710.3" height="17" rx="4" fill="#5eead4"/>
+<rect x="290" y="298" width="518.5" height="17" rx="4" fill="#2563eb"/><rect x="290" y="321" width="502.9" height="17" rx="4" fill="#60a5fa"/><rect x="290" y="344" width="498.0" height="17" rx="4" fill="#0f766e"/><rect x="290" y="367" width="498.0" height="17" rx="4" fill="#5eead4"/>
+<rect x="290" y="438" width="438.6" height="17" rx="4" fill="#2563eb"/><rect x="290" y="461" width="413.1" height="17" rx="4" fill="#60a5fa"/><rect x="290" y="484" width="450.2" height="17" rx="4" fill="#0f766e"/><rect x="290" y="507" width="456.2" height="17" rx="4" fill="#5eead4"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="12" fill="#172033">
+<text x="920" y="171">0.8416</text><text x="900" y="194">0.8152</text><text x="830" y="217">0.7194</text><text x="1008" y="240">0.9598</text>
+<text x="815" y="311">0.7007</text><text x="800" y="334">0.6798</text><text x="795" y="357">0.6730</text><text x="795" y="380">0.6752</text>
+<text x="735" y="451">0.5927</text><text x="710" y="474">0.5582</text><text x="748" y="497">0.6097</text><text x="754" y="520">0.6165</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="13" fill="#334155">
+<rect x="290" y="570" width="13" height="13" rx="2" fill="#2563eb"/><text x="310" y="581">NDCG@10</text><rect x="415" y="570" width="13" height="13" rx="2" fill="#60a5fa"/><text x="435" y="581">MAP@10</text><rect x="535" y="570" width="13" height="13" rx="2" fill="#0f766e"/><text x="555" y="581">Precision@10</text><rect x="700" y="570" width="13" height="13" rx="2" fill="#5eead4"/><text x="720" y="581">Recall@10</text>
+</g></svg>
