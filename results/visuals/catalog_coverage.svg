@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
+<title id="title">Catalog coverage by recommender model</title><desc id="desc">ALS coverage is 20.96 percent, while XGBRanker and FMRegressor coverage are 100 percent.</desc>
+<rect width="1100" height="470" fill="#fff"/>
+<text x="56" y="54" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#172033">Catalog coverage</text>
+<text x="56" y="84" font-family="Arial,sans-serif" font-size="15" fill="#64748b">Share of the catalog represented in generated recommendations · higher is broader</text>
+<g font-family="Arial,sans-serif" font-size="13" fill="#64748b"><text x="290" y="138">0%</text><text x="465" y="138">25%</text><text x="640" y="138">50%</text><text x="815" y="138">75%</text><text x="990" y="138">100%</text></g>
+<g stroke="#e2e8f0"><path d="M290 150V390 M465 150V390 M640 150V390 M815 150V390 M990 150V390"/></g>
+<g font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#172033"><text x="56" y="215">ALS</text><text x="56" y="295">XGBRanker</text><text x="56" y="375">FMRegressor</text></g>
+<g><rect x="290" y="185" width="146.7" height="36" rx="6" fill="#2563eb"/><rect x="290" y="265" width="700" height="36" rx="6" fill="#0f766e"/><rect x="290" y="345" width="700" height="36" rx="6" fill="#0f766e"/></g>
+<g font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#172033"><text x="448" y="209">20.96%</text><text x="1002" y="289">100%</text><text x="1002" y="369">100%</text></g>
+<text x="56" y="430" font-family="Arial,sans-serif" font-size="13" fill="#64748b">Note: coverage is evaluated on model-specific candidate sets; compare alongside eligible-user and scored-row counts.</text>
+</svg>
