@@ -1,0 +1,4 @@
+# Tested in the project notebook environment
+pyspark==4.0.2
+xgboost==3.2.0
+jupyterlab>=4.0,<5
